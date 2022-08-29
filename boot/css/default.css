@@ -48,10 +48,59 @@ border:1px solid #558ab7 !important;
 #hd_login_msg {position:absolute;top:0;left:0;font-size:0;line-height:0;overflow:hidden}
 .msg_sound_only, .sound_only {display:inline-block !important;position:absolute;top:0;left:0;width:0;height:0;margin:0 !important;padding:0 !important;font-size:0;line-height:0;border:0 !important;overflow:hidden !important}
 
+#tnb {border-bottom:1px solid #e5e5e5;margin:0 auto}
+.inner{max-width: 1140px;}
+#tnb:after {display:block;visibility:hidden;clear:both;content:""}
+#tnb .inner {margin:0 auto}
+
+#hd_wrapper {position:relative;margin:0 auto;height:140px;zoom:1}
+#hd_wrapper:after {display:block;visibility:hidden;clear:both;content:""}
+
+#hd_define {float:left}
+#hd_define:after {display:block;visibility:hidden;clear:both;content:""}
+#hd_define li {float:left;font-size:14px;border-right:1px solid #4a4a4a;position:relative;text-align:center;margin:15px 10px 15px 0;padding-right:10px}
+#hd_define li:last-child {padding-right:0;margin-right:0;border-right:0}
+#hd_define li a {display:inline-block;color:#919191}
+#hd_define li.active a {color:#666666;font-weight: bold;}
+
+
+#hd_qnb {float:right;text-align:right}
+#hd_qnb:after {display:block;visibility:hidden;clear:both;content:""}
+#hd_qnb li {float:left;font-size:14px;position:relative;text-align:center;margin:15px 10px 15px 0;padding-right:10px}
+#hd_qnb li:after{content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 52px;
+  background: #e5e5e5;
+}
+#hd_qnb li:first-child:after{display: none;}
+#hd_qnb li span {display:block;margin-top:5px;font-size:0.92em}
+#hd_qnb li a {display:block;color:#666666;font-weight: bold;position: relative;}
+
+
+
 /* nav */
 #gnb > h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#gnb .gnb_1dli a{font-size: 1.3em;padding: 0 20px;font-weight: bold;color: #333;}
+.gnb_1dli a{font-size: 20px;padding: 0 30px;font-weight: bold;color: #333;}
 
-.view{height: 300px;background: skyblue;}
+.max{width: 55px;}
+.login p{font-size: 16px;font-weight: bold;}
+.arrow{
+  background-image: url(../img/arrow_bottom.png);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  opacity: 0.3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #dddddd;
+}
 
+/* visual */
+
+.view{height: 476.645px;width: 1307px;}
+.view video{width: 100%;}
 

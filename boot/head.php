@@ -21,16 +21,31 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
 <!-- header s-->
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+<div id="tnb">
+    	<div class="inner">
+            <?php if(G5_COMMUNITY_USE) { ?>
+    		<ul id="hd_define">
+    			<li class="active"><a href="<?php echo G5_URL ?>/">즐겨찾기 추가</a></li>
+    		</ul>
+            <?php } ?>
+			<ul id="hd_qnb">
+	            <li><a href="<?php echo G5_BBS_URL ?>/faq.php">레벨테스트</a></li>
+	            <li><a href="<?php echo G5_BBS_URL ?>/qalist.php">무료체험</a></li>
+	            <li><a href="<?php echo G5_BBS_URL ?>/new.php">마이레몬</a></li>
+	            <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit">고객센터</a></li>
+	        </ul>
+		</div>
+    </div>
+<nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="<? echo G5_THEME_IMG_URL ?>/udacity-tt-logo.svg" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="<? echo G5_THEME_IMG_URL ?>/logo.PNG" alt=""></a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mt-2 mt-lg-0 ms-5">
                 <?php
 					$menu_datas = get_menu_db(0, true);
 					$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
@@ -53,7 +68,13 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                         href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수
                     있습니다.<?php } ?></li>
                 <?php } ?>
+                
             </ul>
+            <a href="#" class="navbar-brand ms-auto d-flex justify-content-center align-items-center login">
+                 <img src="<? echo G5_THEME_IMG_URL ?>/menu_nonMember.svg" alt="" class="max">
+                 <p class="px-3"> 로그인하기</p>
+                 <span class="arrow"></span>
+            </a>
 
 
             
@@ -62,8 +83,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     </div>
 </nav>
 <!-- header e-->
+
+<!-- visual s -->
 <div class="view">
-    
+    <video src="<? echo G5_THEME_IMG_URL ?>/ybmelemon.mp4" autoplay muted></video>
 </div>
 
 
