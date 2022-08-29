@@ -50,6 +50,8 @@ border:1px solid #558ab7 !important;
 
 /* nav */
 #gnb > h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#gnb .gnb_1dli a{font-size: 1.3em;padding: 0 20px;font-weight: bold;}
+#gnb .gnb_1dli a{font-size: 1.3em;padding: 0 20px;font-weight: bold;color: #333;}
 
 .view{height: 300px;background: skyblue;}
+
+
