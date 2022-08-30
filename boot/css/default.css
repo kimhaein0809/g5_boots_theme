@@ -101,6 +101,10 @@ border:1px solid #558ab7 !important;
 
 /* visual */
 
-.view{height: 476.645px;width: 1307px;}
+.view{
+  width: 1200px;margin: 0 auto;
+  display: flex;justify-content: center;align-items: center;
+  background: #000;
+}
 .view video{width: 100%;}
 
