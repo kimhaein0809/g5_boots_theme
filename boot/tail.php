@@ -13,11 +13,11 @@ if(G5_COMMUNITY_USE === false) {
 ?>
 </div>
 <!-- 컨텐츠 끝 -->
-<footer class="bg-primary">
-    <div class="container">
-        footer
+<div class="bg-dark">
+    <div class="container py-5 text-center text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, distinctio!
     </div>
-</footer>
+</div>
 
 <?php
 if(G5_DEVICE_BUTTON_DISPLAY && !G5_IS_MOBILE) { ?>

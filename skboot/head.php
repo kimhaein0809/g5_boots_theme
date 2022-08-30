@@ -56,10 +56,6 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     있습니다.<?php } ?></li>
                 <?php } ?>
             </ul>
-
-
-            
-
         </div>
     </div>
 </nav>
@@ -76,6 +72,30 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                             행복나눔재단
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont-1st position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center order-2 order-md-1 text-white px-5 left">
+                    <h3 class="mb-5 wow animated fadeInUp" data-wow-offset="100">
+                        실험적인 사회변화 프로젝트를<br>개발합니다
+                    </h3>
+                    <p class="wow animated fadeInUp" data-wow-offset="100">
+                        행복나눔재단은 사회변화 실험으로서<br>사회문제 해결을 향해 나아갑니다.
+                    </p>
+                    <a href="#" class="btn btn-gray text-white btn1 wow animated fadeInUp" data-wow-offset="100">
+                        <p>자세히 보기</p>
+                        <div class="btnWrap">
+                            <i class="arr"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 p-5 order-1 order-md-2">
+                    <div class="bg item1"></div>
+                    <div class="bg item2"></div>
                 </div>
             </div>
         </div>

@@ -38,7 +38,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     </div>
 <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="<? echo G5_THEME_IMG_URL ?>/logo.PNG" alt=""></a>
+        <a class="navbar-brand" href="#">
+            <img src="<? echo G5_THEME_IMG_URL ?>/logo.PNG" alt="" style="width:180px">
+        </a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -62,12 +64,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <?php
 					$i++;
 					}   //end foreach $row
-
-					if ($i == 0) {  ?>
-                <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <a
-                        href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수
-                    있습니다.<?php } ?></li>
-                <?php } ?>
+                ?>
                 
             </ul>
             <a href="#" class="navbar-brand ms-auto d-flex justify-content-center align-items-center login">
@@ -75,20 +72,15 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                  <p class="px-3"> 로그인하기</p>
                  <span class="arrow"></span>
             </a>
-
-
-            
-
         </div>
     </div>
 </nav>
 <!-- header e-->
 
 <!-- visual s -->
-<div class="view">
-    <video src="<? echo G5_THEME_IMG_URL ?>/ybmelemon.mp4" autoplay muted></video>
+<div class="visual">
+    <video src="<? echo G5_THEME_IMG_URL ?>/ybmlemon.mp4" autoplay muted loop></video>
 </div>
-
 
 
 
