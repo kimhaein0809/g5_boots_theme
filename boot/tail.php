@@ -11,7 +11,6 @@ if(G5_COMMUNITY_USE === false) {
     return;
 }
 ?>
-</div>
 <!-- 컨텐츠 끝 -->
 <div class="bg-dark">
     <div class="container py-5 text-center text-white">

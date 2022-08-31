@@ -36,54 +36,101 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 	        </ul>
 		</div>
     </div>
-<nav class="navbar navbar-expand-sm navbar-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+      <div class="container">
+
+        <a class="navbar-brand" href="<? echo G5_URL?>">
             <img src="<? echo G5_THEME_IMG_URL ?>/logo.PNG" alt="" style="width:180px">
         </a>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-            aria-label="Toggle navigation">
+
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mt-2 mt-lg-0 ms-5">
-                <?php
-					$menu_datas = get_menu_db(0, true);
-					$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
-					$i = 0;
-					foreach( $menu_datas as $row ){
-						if( empty($row) ) continue;
-						$add_class = (isset($row['sub']) && $row['sub']) ? 'gnb_al_li_plus' : '';
-					?>
-                <li  class="nav-item gnb_1dli">
-                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>"
-                    class="nav-link"><?php echo $row['me_name'] ?></a>
 
-                </li>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+
+
                 <?php
-					$i++;
-					}   //end foreach $row
+				$menu_datas = get_menu_db(0, true);
+				$gnb_zindex = 999; // gnb_1dli z-index 값 설정용
+                $i = 0;
+                foreach( $menu_datas as $row ){
+                    if( empty($row) ) continue;
+                    
                 ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="<?php echo $row['me_link']; ?>" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" target="_<?php echo $row['me_target']; ?>">
+                            <?php echo $row['me_name'] ?>
+                        </a>
+                        <!-- 서브 -->
+                        <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul> -->
+
+                        <?php
+                        $k = 0;
+                        foreach( (array) $row['sub'] as $row2 ){
+
+                            if( empty($row2) ) continue; 
+
+                            if($k == 0)
+                                echo '<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">'.PHP_EOL;
+                        ?>
+
+                            <li >
+                                <a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"  class="dropdown-item">
+                                    <?php echo $row2['me_name'] ?>
+                                </a>
+                            </li>
+
+                        <?php
+                        $k++;
+                        }   //end foreach $row2
+
+                        if($k > 0)
+                            echo '</ul>'.PHP_EOL;
+                        ?>
+                        <!-- 서브 -->
+                    </li>
+                <?php
+                $i++;
+                }   //end foreach $row
+
+               ?>
                 
+
             </ul>
             <a href="#" class="navbar-brand ms-auto d-flex justify-content-center align-items-center login">
                  <img src="<? echo G5_THEME_IMG_URL ?>/menu_nonMember.svg" alt="" class="max">
                  <p class="px-3"> 로그인하기</p>
                  <span class="arrow"></span>
             </a>
+            
+
+
         </div>
-    </div>
+  </div>
 </nav>
-<!-- header e-->
-
-<!-- visual s -->
-<div class="visual">
-    <video src="<? echo G5_THEME_IMG_URL ?>/ybmlemon.mp4" autoplay muted loop></video>
-</div>
 
 
 
 
-<!-- content s -->
-<div class="container">
+
+
+<!-- } 상단 끝 -->
+
+
+<hr>
+
+<!-- 콘텐츠 시작 { -->
+
+<? if(defined('_INDEX_')) { ?> 
+    <div class="container_wr">
+<? }else{?>
+    <div class="container">
+<?}?>
