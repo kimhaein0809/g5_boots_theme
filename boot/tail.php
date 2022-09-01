@@ -11,10 +11,16 @@ if(G5_COMMUNITY_USE === false) {
     return;
 }
 ?>
-<!-- 컨텐츠 끝 -->
+   <? include_once(G5_THEME_PATH."/skin/nav/mysubmenu.php")?>
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+
+<!-- 하단 시작 { -->
 <div class="bg-dark">
     <div class="container py-5 text-center text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, distinctio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, iste.
     </div>
 </div>
 

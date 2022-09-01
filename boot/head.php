@@ -20,23 +20,14 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
-<!-- header s-->
-<div id="tnb">
-    	<div class="inner">
-            <?php if(G5_COMMUNITY_USE) { ?>
-    		<ul id="hd_define">
-    			<li class="active"><a href="<?php echo G5_URL ?>/">즐겨찾기 추가</a></li>
-    		</ul>
-            <?php } ?>
-			<ul id="hd_qnb">
-	            <li><a href="<?php echo G5_BBS_URL ?>/faq.php">레벨테스트</a></li>
-	            <li><a href="<?php echo G5_BBS_URL ?>/qalist.php">무료체험</a></li>
-	            <li><a href="<?php echo G5_BBS_URL ?>/new.php">마이레몬</a></li>
-	            <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit">고객센터</a></li>
-	        </ul>
-		</div>
-    </div>
-    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+<?php
+    if(defined('_INDEX_')) { // index에서만 실행
+        include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
+    }
+    ?>
+<!-- 상단 시작 { -->
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container">
 
         <a class="navbar-brand" href="<? echo G5_URL?>">
@@ -102,14 +93,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 }   //end foreach $row
 
                ?>
-                
+
 
             </ul>
-            <a href="#" class="navbar-brand ms-auto d-flex justify-content-center align-items-center login">
-                 <img src="<? echo G5_THEME_IMG_URL ?>/menu_nonMember.svg" alt="" class="max">
-                 <p class="px-3"> 로그인하기</p>
-                 <span class="arrow"></span>
-            </a>
+
             
 
 
@@ -129,8 +116,38 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <!-- 콘텐츠 시작 { -->
 
+<? if(!defined('_INDEX_')) { ?> 
+   <div class="container rounded-5 subView" id="page_title">
+
+    <div class="txtWrap d-flex flex-column align-items-center gap-3">
+        <h2 class="loc1D stitle text-white locTitle text-center"></h2>
+        <div class="p-3 bg-dark rounded-5">
+            <ul class="d-flex text-white gap-2">
+                <li><img src="<? echo G5_THEME_IMG_URL ?>/home_icon_white.png" alt=""></li>
+                <li>></li>
+                <li class="loc1D">></li>
+                <li>></li>
+                <li><?php echo get_head_title($g5['title']); ?></li>
+            </ul>
+            
+        </div>
+    </div>
+
+   </div>
+<? }?>
+
+
+
 <? if(defined('_INDEX_')) { ?> 
-    <div class="container_wr">
+    <div class="container_wr"> <!-- full -->
 <? }else{?>
-    <div class="container">
+    <div class="container position-relative"> <!-- 1400 -->
+        <h2 id="container_title" class="stitle text-center py-3">
+            <span title="<?php echo get_text($g5['title']); ?>">
+            <?php echo get_head_title($g5['title']); ?></span>
+        </h2>
+
 <?}?>
+
+
+    
