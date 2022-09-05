@@ -23,7 +23,25 @@ include_once(G5_THEME_PATH.'/head.php');
     .mView video{
         position: absolute;width: 100%;left: 50%;top: 50%;transform:translate(-50%,-50%)
     }
-    
+    .slide2 .prev,.slide2 .next{cursor: pointer;}
+    .slide2 img.prev,img.next{position: absolute;top: 50%;transform:translateY(-50%)}
+    .slide2 img.prev{left: -50px;}
+    .slide2 img.next{right: -50px;}
+
+    .slickslide2 .sItem{margin: 0 10px;}
+
+    .slide2 .sItem{position: relative;border-radius:10px;overflow: hidden;}
+    .slide2 .sItem .txt{
+        position: absolute;
+        width: 100%;height: 100%;
+        top: 0;left: 0;background-color:rgba(0,0,0,0.3);
+          
+    }
+    .slide2 .sItem .txt a{
+        display: flex;height: 100%;
+        justify-content: center;align-items: center;
+        color:white;font-size:2em
+    }
 </style>
 
 <div class="mView">
@@ -183,7 +201,15 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </div>
-
+<div class="container position-relative slide2">
+    <img src="<?php echo G5_THEME_IMG_URL?>/prev.png" alt="" class="prev d-none d-md-block" >
+    <img src="<?php echo G5_THEME_IMG_URL?>/next.png" alt="" class="next d-none d-md-block">
+    <div class="slickslide2">
+        <?php
+            echo latest('theme/pic_haein', 'gallery', 7, 23);		
+        ?>
+    </div>
+</div>
 <script>
     AOS.init();
 
@@ -241,6 +267,28 @@ include_once(G5_THEME_PATH.'/head.php');
     }
   ]
 });
+$('.slickslide2').slick({
+    centerMode: true,
+    slidesToShow: 5,
+    nextArrow:$('.slide2 .next'),
+    prevArrow:$('.slide2 .prev'),
+    responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+            centerMode: true,
+            slidesToShow: 1
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            centerMode: true,
+            slidesToShow: 1
+        }
+        }
+    ]
+    });
 </script>
 
 

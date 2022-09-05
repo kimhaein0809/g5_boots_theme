@@ -243,7 +243,7 @@ h2.stitle{font-size: 32px;}
   text-align: center;
   color: #fff;
 }
-
+.cont6{margin-bottom: 200px;}
 @media screen and (max-width: 800px) {
   .aos-item {
     width: 50%;
