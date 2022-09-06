@@ -40,7 +40,7 @@ include_once(G5_THEME_PATH.'/head.php');
 </style>
 
 <div class="mView">
-    <video src="<? echo G5_THEME_IMG_URL ?>/ybmlemon.mp4" autoplay="" muted="" loop draggable="true" class="w-100"></video>
+    <video src="<?php echo G5_THEME_IMG_URL ?>/ybmlemon.mp4" autoplay="" muted="" loop draggable="true" class="w-100"></video>
 </div>
 
 
