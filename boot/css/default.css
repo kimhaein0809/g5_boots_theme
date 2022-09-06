@@ -249,7 +249,7 @@ h2.stitle{font-size: 32px;}
     width: 50%;
   }
 }
-
+.gallery{font-size: 38px;font-weight: bold;}
 /********** css responsive **********/
 @media (max-width: 1399px) {
 

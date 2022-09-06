@@ -23,25 +23,20 @@ include_once(G5_THEME_PATH.'/head.php');
     .mView video{
         position: absolute;width: 100%;left: 50%;top: 50%;transform:translate(-50%,-50%)
     }
+    
     .slide2 .prev,.slide2 .next{cursor: pointer;}
     .slide2 img.prev,img.next{position: absolute;top: 50%;transform:translateY(-50%)}
     .slide2 img.prev{left: -50px;}
     .slide2 img.next{right: -50px;}
 
-    .slickslide2 .sItem{margin: 0 10px;}
+    .slickslide2 .sItem{}
 
-    .slide2 .sItem{position: relative;border-radius:10px;overflow: hidden;}
-    .slide2 .sItem .txt{
-        position: absolute;
-        width: 100%;height: 100%;
-        top: 0;left: 0;background-color:rgba(0,0,0,0.3);
-          
-    }
+    .slide2 .sItem{position: relative;overflow: hidden;}
+    
     .slide2 .sItem .txt a{
-        display: flex;height: 100%;
-        justify-content: center;align-items: center;
-        color:white;font-size:2em
+        font-size:2em;margin-top: 20px;
     }
+    /* .slickslide2 .sItem.slick-center{padding: 15px;opacity: 1;transform:scale(1)} */
 </style>
 
 <div class="mView">
@@ -201,75 +196,24 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <div class="container position-relative slide2">
-    <img src="<?php echo G5_THEME_IMG_URL?>/prev.png" alt="" class="prev d-none d-md-block" >
-    <img src="<?php echo G5_THEME_IMG_URL?>/next.png" alt="" class="next d-none d-md-block">
+    <h3 class="text-center mb-5 gallery">갤러리</h3>
+    <img src="<?php echo G5_THEME_IMG_URL?>/slide_arrow_left.png" alt="" class="prev d-none d-md-block" >
+    <img src="<?php echo G5_THEME_IMG_URL?>/slide_arrow_right.png" alt="" class="next d-none d-md-block">
     <div class="slickslide2">
         <?php
-            echo latest('theme/pic_haein', 'gallery', 7, 23);		
+            echo latest('theme/pic_haein', 'gallery', 4, 23);		
         ?>
     </div>
 </div>
 <script>
     AOS.init();
 
-   $('.slickSlide1').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  nextArrow:$('.next'),
-  nextArrow:$('.prev'),
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-   $('.slickSlide2').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  nextArrow:$('.next'),
-  nextArrow:$('.prev'),
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
 $('.slickslide2').slick({
     centerMode: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     nextArrow:$('.slide2 .next'),
     prevArrow:$('.slide2 .prev'),
     responsive: [

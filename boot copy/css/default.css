@@ -200,7 +200,7 @@ h2.stitle{font-size: 32px;}
   margin: 0 0 10px 10px;
 }
 .mList{
-  width: calc(100% + 20px);
+  
 }
 .mItem{
   display: inline-flex;
@@ -218,7 +218,7 @@ h2.stitle{font-size: 32px;}
   padding-top: 29px;
 }
 
-
+.gallery{font-size: 38px;font-weight: bold;}
 /********** css responsive **********/
 @media (max-width: 1399px) {
 
