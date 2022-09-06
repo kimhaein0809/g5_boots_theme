@@ -118,7 +118,6 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
 <? if(!defined('_INDEX_')) { ?> 
    <div class="container rounded-5 subView" id="page_title">
-
     <div class="txtWrap d-flex flex-column align-items-center gap-3">
         <h2 class="loc1D stitle text-white locTitle text-center"></h2>
         <div class="p-3 bg-dark rounded-5">
