@@ -81,7 +81,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="row">
         <div class="col-lg-7 d-flex justify-content-center align-items-center position-relative order-lg-1 order-sm-2">
             <img src="<? echo G5_THEME_IMG_URL ?>/main_visual_03.png" alt="" class="img-fluid" data-aos="fade-right" data-aos-duration="1500">
-            <img src="<? echo G5_THEME_IMG_URL ?>/img_6.png" alt="" class="position-absolute rotate" class="img-fluid">
+            <img src="<? echo G5_THEME_IMG_URL ?>/img_6.png" alt="" class="position-absolute rotate img-fluid">
         </div>
         <div class="col-lg-5 d-flex justify-content-center flex-column txt text-lg-start text-sm-center order-lg-2 order-sm-1 mb-sm-5" data-aos="fade-left" data-aos-duration="1500">
             <h2 class="mb-4">지루할 틈이 없는 수업 진행</h2>
@@ -119,76 +119,76 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 <div class="cont6 container">
     <div class="row d-flex flex-column justify-content-center align-items-center">
-        <div class="col-lg-6 txt text-center">
+        <div class="col-md-6 txt text-center">
         <h2 class="mb-4">YBM 레몬만의 밀착 학습관리</h2>
             <p>체계적인 관리를 통해 우리 아이의 학습효과를 극대화 합니다.</p>
         </div>
         <div class="col-lg-6 py-5 d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="1500">
             <img src="<? echo G5_THEME_IMG_URL ?>/graph.png" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-12">
+        <div class="col-md-11 offset-md-1">
             <ul class="mList">
                 <li class="mItem">
                     <i class="icon report"></i>
                     <div class="right">
-                        <h4>학습 결과 보고서</h4>
-                        <p>Daily Class Report</p>
+                        <h4 class="mb-2">학습 결과 보고서</h4>
+                        <p class="eng">Daily Class Report</p>
                     </div>
                     <p class="info">학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
                 </li>
                 <li class="mItem">
                     <i class="icon test"></i>
                     <div class="right">
-                        <h4>성취도 테스트</h4>
-                        <p>Achievement Test</p>
+                        <h4 class="mb-2">성취도 테스트</h4>
+                        <p class="eng">Achievement Test</p>
                     </div>
                     <p class="info">3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
                 </li>
                 <li class="mItem">
                     <i class="icon solu"></i>
                     <div class="right">
-                        <h4>화상솔루션</h4>
-                        <p>Online Learning Solutions</p>
+                        <h4 class="mb-2">화상솔루션</h4>
+                        <p class="eng">Online Learning Solutions</p>
                     </div>
                     <p class="info">YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
                 </li>
                 <li class="mItem">
                     <i class="icon onoff"></i>
                     <div class="right">
-                        <h4>온ㆍ오프라인 숙제관리</h4>
-                        <p>Homework</p>
+                        <h4 class="mb-2">온ㆍ오프라인 숙제관리</h4>
+                        <p class="eng">Homework</p>
                     </div>
                     <p class="info">수업 후 온라인ㆍ오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
                 </li>
                 <li class="mItem">
                     <i class="icon att"></i>
                     <div class="right">
-                        <h4>출결관리</h4>
-                        <p>Attendance</p>
+                        <h4 class="mb-2">출결관리</h4>
+                        <p class="eng">Attendance</p>
                     </div>
                     <p class="info">학습자의 출결 상황을 한 눈에 파악할 수 있습니다.</p>
                 </li>
                 <li class="mItem">
                     <i class="icon consult"></i>
                     <div class="right">
-                        <h4>정기상담관리</h4>
-                        <p>Regular Consulting</p>
+                        <h4 class="mb-2">정기상담관리</h4>
+                        <p class="eng">Regular Consulting</p>
                     </div>
                     <p class="info">학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
                 </li>
                 <li class="mItem">
                     <i class="icon mobile"></i>
                     <div class="right">
-                        <h4>모바일 알림</h4>
-                        <p>Notifications</p>
+                        <h4 class="mb-2">모바일 알림</h4>
+                        <p class="eng">Notifications</p>
                     </div>
                     <p class="info">Mobile에서 아이의 학습현황을 실시간으로 조회하고 알림을 받습니다.</p>
                 </li>
                 <li class="mItem">
                     <i class="icon point"></i>
                     <div class="right">
-                        <h4>포인트 제도</h4>
-                        <p>Reward System</p>
+                        <h4 class="mb-2">포인트 제도</h4>
+                        <p class="eng">Reward System</p>
                     </div>
                     <p class="info">학습 보상으로 지급되는 Point는 학습 동기를 부여합니다.</p>
                 </li>
