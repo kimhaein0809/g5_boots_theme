@@ -196,43 +196,58 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <div class="container position-relative slide2">
-    <h3 class="text-center mb-5 gallery">갤러리</h3>
-    <img src="<?php echo G5_THEME_IMG_URL?>/slide_arrow_left.png" alt="" class="prev d-none d-md-block" >
-    <img src="<?php echo G5_THEME_IMG_URL?>/slide_arrow_right.png" alt="" class="next d-none d-md-block">
-    <div class="slickslide2">
-        <?php
-            echo latest('theme/pic_haein', 'gallery', 4, 23);		
+    <img src="<?php echo G5_THEME_IMG_URL?>/pre.png" alt="" class="prev d-none d-md-block" >
+    <img src="<?php echo G5_THEME_IMG_URL?>/next.png" alt="" class="next d-none d-md-block">
+    <div class="responsive">
+    <?php
+            echo latest('theme/pic_haein', 'gallery', 8, 23);	
         ?>
     </div>
 </div>
+
+
+
+
 <script>
     AOS.init();
-
-$('.slickslide2').slick({
-    centerMode: true,
-    slidesToShow: 4,
-    nextArrow:$('.slide2 .next'),
-    prevArrow:$('.slide2 .prev'),
-    responsive: [
-        {
-        breakpoint: 768,
-        settings: {
-            centerMode: true,
-            slidesToShow: 1
-        }
-        },
-        {
-        breakpoint: 480,
-        settings: {
-            centerMode: true,
-            slidesToShow: 1
-        }
-        }
-    ]
-    });
+    $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 </script>
 
 
