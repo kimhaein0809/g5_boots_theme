@@ -183,6 +183,24 @@ h2.stitle{font-size: 32px;}
     border-radius: 50px;
     position: relative;
 }
+.rotate {
+  animation: rotate_image 10s linear infinite;
+  transform-origin: 50% 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: 80px;
+  margin-top: 145px;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .cont4{margin-bottom: 100px;}
 .char{width: 400px;left: 100px;bottom: -60px;}
 .online{
@@ -235,12 +253,26 @@ h2.stitle{font-size: 32px;}
   background: url(../img/main_icon_test.png) no-repeat center;
   background-position: 0 0;
 }
+.mItem:hover i.test {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_test.png) no-repeat center;
+  background-position: 0 -32px;
+}
 .solu {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url(../img/main_icon_solution.png) no-repeat center;
   background-position: 0 0;
+}
+.mItem:hover i.solu {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_solution.png) no-repeat center;
+  background-position: 0 -32px;
 }
 .onoff {
   display: inline-block;
@@ -249,12 +281,26 @@ h2.stitle{font-size: 32px;}
   background: url(../img/main_icon_homework.png) no-repeat center;
   background-position: 0 0;
 }
+.mItem:hover i.onoff {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_homework.png) no-repeat center;
+  background-position: 0 -32px;
+}
 .att {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url(../img/main_icon_attendance.png) no-repeat center;
   background-position: 0 0;
+}
+.mItem:hover i.att {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_attendance.png) no-repeat center;
+  background-position: 0 -32px;
 }
 .consult {
   display: inline-block;
@@ -263,12 +309,26 @@ h2.stitle{font-size: 32px;}
   background: url(../img/main_icon_counsel.png) no-repeat center;
   background-position: 0 0;
 }
+.mItem:hover i.consult {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_counsel.png) no-repeat center;
+  background-position: 0 -32px;
+}
 .mobile {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url(../img/main_icon_alert.png) no-repeat center;
   background-position: 0 0;
+}
+.mItem:hover i.mobile {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_alert.png) no-repeat center;
+  background-position: 0 -32px;
 }
 .point {
   display: inline-block;
@@ -277,8 +337,15 @@ h2.stitle{font-size: 32px;}
   background: url(../img/main_icon_point.png) no-repeat center;
   background-position: 0 0;
 }
-.info {
-  font-size: 1.5rem;
+.mItem:hover i.point {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_point.png) no-repeat center;
+  background-position: 0 -32px;
+}
+.info{
+  font-size: 14px;
   color: #ffffff;
   background: #00b388;
   position: absolute;
@@ -291,8 +358,48 @@ h2.stitle{font-size: 32px;}
   padding: 0 20px;
   transition: padding 0.3s;
 }
+.mItem:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+}
+.mItem:hover {
+  color: #ffffff;
+}
+.mItem:hover h4 {
+  z-index: 12;
+}
+.mItem:hover .eng {
+  color: #ffffff;
+  opacity: 0.6;
+  z-index: 12;
+}
+.mItem:hover .info {
+  max-height: 150px;
+  padding: 40px 20px 15px;
+  z-index: 11;
+  font-size: 14px;
+}
+.mItem:hover:after {
+  background: #008062;
+  box-shadow: inset 0 9px 9px -2px rgba(225, 225, 225, 0.3);
+  z-index: 11;
+  border: 1px solid #006c53;
+}
 .container{max-width: 1400px;}
-
+.mItem:hover i{z-index: 9999}
+.mItem:hover i.report {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/main_icon_report.png) no-repeat center;
+  background-position: 0 -32px;
+}
 
 .aos-all {
   width: 1000px;

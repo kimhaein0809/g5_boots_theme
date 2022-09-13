@@ -198,12 +198,13 @@ include_once(G5_THEME_PATH.'/head.php');
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<div class="container position-relative slide2">
+<div class="container position-relative slide">
+    <h2 class="text-center">갤러리</h2>
     <img src="<?php echo G5_THEME_IMG_URL?>/pre.png" alt="" class="prev d-none d-md-block" >
     <img src="<?php echo G5_THEME_IMG_URL?>/next.png" alt="" class="next d-none d-md-block">
     <div class="responsive">
     <?php
-            echo latest('theme/pic_haein', 'gallery', 8, 23);	
+            echo latest('theme/pic_haein', 'gallery', 7, 23);	
         ?>
     </div>
 </div>
@@ -219,6 +220,8 @@ include_once(G5_THEME_PATH.'/head.php');
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
+  nextArrow:$('.slide .next'),
+    prevArrow:$('.slide .prev'),
   responsive: [
     {
       breakpoint: 1024,
