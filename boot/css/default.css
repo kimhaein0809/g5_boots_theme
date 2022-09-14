@@ -239,6 +239,11 @@ h2.stitle{font-size: 32px;}
     color: #888888;
     z-index: 10;
 }
+.slide h2{
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 54px;
+}
 .report {
   display: inline-block;
   width: 32px;
@@ -431,7 +436,21 @@ h2.stitle{font-size: 32px;}
     width: 50%;
   }
 }
-.gallery{font-size: 38px;font-weight: bold;}
+.slide{margin-bottom: 50px;}
+.slide:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: url(../img/wave_bg.png);
+  position: absolute;
+  left: 0;bottom: -85px;
+  transform: rotate(180deg);
+}
+.cont7{
+  padding: 50px 0 60px;
+  background: #e4faf6;
+}
 /********** css responsive **********/
 @media (max-width: 1399px) {
 
