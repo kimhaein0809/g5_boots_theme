@@ -436,8 +436,8 @@ h2.stitle{font-size: 32px;}
     width: 50%;
   }
 }
-.slide{margin-bottom: 50px;}
-.slide:after{
+.slideWrap{margin-bottom: 50px;}
+.slideWrap:after{
   content: "";
   display: block;
   width: 100%;
@@ -450,7 +450,38 @@ h2.stitle{font-size: 32px;}
 .cont7{
   padding: 50px 0 60px;
   background: #e4faf6;
+  width: 100%;
 }
+.cont77{
+  padding: 100px 0;
+}
+.title{
+  font-size: 38px;
+  font-weight: bold;
+}
+.card{
+  border: none;
+  border-radius: 30px;
+}
+.card-img-top{
+  border-radius: 30px 30px 0 0;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-text{
+  color: #666;
+  font-size: 16px;
+  display: -webkit-box;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 20px 0;
+  text-align: left;
+}
+
+
 /********** css responsive **********/
 @media (max-width: 1399px) {
 
