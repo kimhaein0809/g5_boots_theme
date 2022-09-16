@@ -126,74 +126,74 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="col-lg-6 py-5 d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="1500">
             <img src="<? echo G5_THEME_IMG_URL ?>/graph.png" alt="" class="img-fluid">
         </div>
-        <div class="col-md-11 offset-md-1">
-            <ul class="mList">
-                <li class="mItem">
-                    <i class="icon report"></i>
-                    <div class="right">
-                        <h4 class="mb-2">학습 결과 보고서</h4>
-                        <p class="eng">Daily Class Report</p>
-                    </div>
-                    <p class="info">학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
-                </li>
-                <li class="mItem">
-                    <i class="icon test"></i>
-                    <div class="right">
-                        <h4 class="mb-2">성취도 테스트</h4>
-                        <p class="eng">Achievement Test</p>
-                    </div>
-                    <p class="info">3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
-                </li>
-                <li class="mItem">
-                    <i class="icon solu"></i>
-                    <div class="right">
-                        <h4 class="mb-2">화상솔루션</h4>
-                        <p class="eng">Online Learning Solutions</p>
-                    </div>
-                    <p class="info">YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
-                </li>
-                <li class="mItem">
-                    <i class="icon onoff"></i>
-                    <div class="right">
-                        <h4 class="mb-2">온ㆍ오프라인 숙제관리</h4>
-                        <p class="eng">Homework</p>
-                    </div>
-                    <p class="info">수업 후 온라인ㆍ오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
-                </li>
-                <li class="mItem">
-                    <i class="icon att"></i>
-                    <div class="right">
-                        <h4 class="mb-2">출결관리</h4>
-                        <p class="eng">Attendance</p>
-                    </div>
-                    <p class="info">학습자의 출결 상황을 한 눈에 파악할 수 있습니다.</p>
-                </li>
-                <li class="mItem">
-                    <i class="icon consult"></i>
-                    <div class="right">
-                        <h4 class="mb-2">정기상담관리</h4>
-                        <p class="eng">Regular Consulting</p>
-                    </div>
-                    <p class="info">학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
-                </li>
-                <li class="mItem">
-                    <i class="icon mobile"></i>
-                    <div class="right">
-                        <h4 class="mb-2">모바일 알림</h4>
-                        <p class="eng">Notifications</p>
-                    </div>
-                    <p class="info">Mobile에서 아이의 학습현황을 실시간으로 조회하고 알림을 받습니다.</p>
-                </li>
-                <li class="mItem">
-                    <i class="icon point"></i>
-                    <div class="right">
-                        <h4 class="mb-2">포인트 제도</h4>
-                        <p class="eng">Reward System</p>
-                    </div>
-                    <p class="info">학습 보상으로 지급되는 Point는 학습 동기를 부여합니다.</p>
-                </li>
-            </ul>
-        </div>
+    </div>
+    <div class="management-list">
+        <ul class="mList">
+            <li class="mItem">
+                <i class="icon report"></i>
+                <div class="right">
+                    <h4 class="mb-2">학습 결과 보고서</h4>
+                    <p class="eng">Daily Class Report</p>
+                </div>
+                <p class="info">학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
+            </li>
+            <li class="mItem">
+                <i class="icon test"></i>
+                <div class="right">
+                    <h4 class="mb-2">성취도 테스트</h4>
+                    <p class="eng">Achievement Test</p>
+                </div>
+                <p class="info">3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
+            </li>
+            <li class="mItem">
+                <i class="icon solu"></i>
+                <div class="right">
+                    <h4 class="mb-2">화상솔루션</h4>
+                    <p class="eng">Online Learning Solutions</p>
+                </div>
+                <p class="info">YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
+            </li>
+            <li class="mItem">
+                <i class="icon onoff"></i>
+                <div class="right">
+                    <h4 class="mb-2">온ㆍ오프라인 숙제관리</h4>
+                    <p class="eng">Homework</p>
+                </div>
+                <p class="info">수업 후 온라인ㆍ오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
+            </li>
+            <li class="mItem">
+                <i class="icon att"></i>
+                <div class="right">
+                    <h4 class="mb-2">출결관리</h4>
+                    <p class="eng">Attendance</p>
+                </div>
+                <p class="info">학습자의 출결 상황을 한 눈에 파악할 수 있습니다.</p>
+            </li>
+            <li class="mItem">
+                <i class="icon consult"></i>
+                <div class="right">
+                    <h4 class="mb-2">정기상담관리</h4>
+                    <p class="eng">Regular Consulting</p>
+                </div>
+                <p class="info">학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
+            </li>
+            <li class="mItem">
+                <i class="icon mobile"></i>
+                <div class="right">
+                    <h4 class="mb-2">모바일 알림</h4>
+                    <p class="eng">Notifications</p>
+                </div>
+                <p class="info">Mobile에서 아이의 학습현황을 실시간으로 조회하고 알림을 받습니다.</p>
+            </li>
+            <li class="mItem">
+                <i class="icon point"></i>
+                <div class="right">
+                    <h4 class="mb-2">포인트 제도</h4>
+                    <p class="eng">Reward System</p>
+                </div>
+                <p class="info">학습 보상으로 지급되는 Point는 학습 동기를 부여합니다.</p>
+            </li>
+        </ul>
     </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -263,65 +263,62 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
 </div>
 <div class="footer">
-    <div class="top container">
+    <div class="top container py-3">
         <div class="row">
-            <div class="col-md-2">
-                <h4><a href="#">YBM LEMON 스토리</a></h4>
-                <p><a href="#">상담신청</a></p>
+            <div class="col-md-2 col-ls-12">
+                <h4 class="py-3 white"><a href="#">YBM LEMON 스토리</a></h4>
+                <p class="py-1"><a href="#">상담신청</a></p>
             </div>
             <div class="col-md-2">
-                <h4><a href="#">수강신청</a></h4>
+                <h4 class="py-3"><a href="#">수강신청</a></h4>
                 <ul>
-                    <li><a href="#">수강신청</a></li>
-                    <li><a href="#">무료체험</a></li>
-                    <li><a href="#">레벨테스트</a></li>
-                    <li><a href="#">무료체험&레벨테스트 신청확인</a></li>
+                    <li class="py-1"><a href="#">수강신청</a></li>
+                    <li class="py-1"><a href="#">무료체험</a></li>
+                    <li class="py-1"><a href="#">레벨테스트</a></li>
+                    <li class="py-1"><a href="#">무료체험&레벨테스트 신청확인</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
-                <h4><a href="#">커뮤니티</a></h4>
+                <h4 class="py-3"><a href="#">커뮤니티</a></h4>
                 <ul>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Lemon Seed Mall</a></li>
-                    <li><a href="#">이벤트</a></li>
+                    <li class="py-1"><a href="#">Gallery</a></li>
+                    <li class="py-1"><a href="#">Lemon Seed Mall</a></li>
+                    <li class="py-1"><a href="#">이벤트</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
-                <h4><a href="#">마이클래스</a></h4>
+                <h4 class="py-3"><a href="#">마이클래스</a></h4>
                 <ul>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Report</a></li>
-                    <li><a href="#">숙제 제출 및 확인</a></li>
-                    <li><a href="#">Lemon Seed</a></li>
-                    <li><a href="#">수강현황</a></li>
-                    <li><a href="#">정회원 공지사항</a></li>
+                    <li class="py-1"><a href="#">Calendar</a></li>
+                    <li class="py-1"><a href="#">Report</a></li>
+                    <li class="py-1"><a href="#">숙제 제출 및 확인</a></li>
+                    <li class="py-1"><a href="#">Lemon Seed</a></li>
+                    <li class="py-1"><a href="#">수강현황</a></li>
+                    <li class="py-1"><a href="#">정회원 공지사항</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
-                <h4><a href="#">My Lemon</a></h4>
+                <h4 class="py-3"><a href="#">My Lemon</a></h4>
                 <ul>
-                    <li><a href="#">수강신청 내역</a></li>
-                    <li><a href="#">포인트몰 구매내역</a></li>
-                    <li><a href="#">학부모정보</a></li>
-                    <li><a href="#">학습자정보</a></li>
-                    <li><a href="#">1:1 답변확인</a></li>
-                    <li><a href="#">학습장애답변확인</a></li>
-                    <li><a href="#">상담신청내역</a></li>
+                    <li class="py-1"><a href="#">수강신청 내역</a></li>
+                    <li class="py-1"><a href="#">포인트몰 구매내역</a></li>
+                    <li class="py-1"><a href="#">학부모정보</a></li>
+                    <li class="py-1"><a href="#">학습자정보</a></li>
+                    <li class="py-1"><a href="#">1:1 답변확인</a></li>
+                    <li class="py-1"><a href="#">학습장애답변확인</a></li>
+                    <li class="py-1"><a href="#">상담신청내역</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
-                <h4><a href="#">고객센터</a></h4>
+                <h4 class="py-3"><a href="#">고객센터</a></h4>
                 <ul>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">1:1 상담</a></li>
-                    <li><a href="#">학습장애신고</a></li>
+                    <li class="py-1"><a href="#">공지사항</a></li>
+                    <li class="py-1"><a href="#">FAQ</a></li>
+                    <li class="py-1"><a href="#">1:1 상담</a></li>
+                    <li class="py-1"><a href="#">학습장애신고</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="btm container">
-
     </div>
 </div>
 

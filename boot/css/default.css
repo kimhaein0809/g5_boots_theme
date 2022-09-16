@@ -104,7 +104,12 @@ border:1px solid #558ab7 !important;
   justify-content: center;
   align-items: center;
 }
-.subView.subTopBg_01{background-image: url(../img/images01.jpg);}
+.subView.subTopBg_01{
+  background-image: url(../img/sub_banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .subView.subTopBg_02{background-image: url(../img/images02.jpg);}
 .subView.subTopBg_03{background-image: url(../img/images03.jpg);}
 .subView.subTopBg_04{background-image: url(../img/images04.jpg);}
@@ -210,6 +215,9 @@ h2.stitle{font-size: 32px;}
 /* .mList{
   width: calc(100% + 20px);
 } */
+.management-list{
+  width: calc( 100% + 20px );
+}
 .mItem{
   display: inline-flex;
   align-items: flex-start;
@@ -481,7 +489,23 @@ h2.stitle{font-size: 32px;}
   text-align: left;
 }
 
-
+.footer{background-color: #3e3e46;}
+.footer h4 a{color: white;font-size: 16px;font-weight: bold;}
+.footer p a,.footer li a,.fBtm li{color: #acacb0;font-size: 14px;font-weight: bold;}
+.topMenu li a{font-size: 16px;}
+.sns li img{width: 40px;height: 40px;}
+.sns li{
+  background: transparent;
+  line-height: 72px;
+  vertical-align: middle;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background: #39393e;
+}
+.fBtm2 li{color: #888;font-weight: normal;}
+.fBtm2 li span{color: #aaa;font-weight: bold;}
 /********** css responsive **********/
 @media (max-width: 1399px) {
 
